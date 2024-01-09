@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "appInsights1": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/microsoft.insights/components/SpeechifyFunctions",
+      "type": "appInsights.azure",
+      "connectionId": "APPLICATIONINSIGHTS_CONNECTION_STRING",
+      "dynamicId": null
+    },
+    "secrets2": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/SpeechifyFunctions/providers/Microsoft.ServiceLinker/linkers/VaultUri_84C14E3942",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.KeyVault/vaults/SpeechifyFunctionsvault",
+      "type": "secrets.keyVault",
+      "connectionId": "VaultUri"
+    },
+    "storage2": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/SpeechifyFunctions/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsSpeechifyStorageConnect_6858AB13C5, /subscriptions/96d78c0a-df47-4d80-bd96-6ae8f4def5b2/resourceGroups/SpeechifyRG/providers/Microsoft.Web/sites/SpeechifyFunctions/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsSpeechifyStorageConnect_EA623D769B",
+      "secretStore": "AzureKeyVault",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Storage/storageAccounts/speechifystorageaccount",
+      "type": "storage.azure",
+      "connectionId": "ConnectionStrings:SpeechifyStorageConnectionString"
+    }
+  }
+}
